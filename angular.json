@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"ngx-intl-tel-input-app": {
+		"@deliverysolutions/ngx-intl-tel-input-app": {
 			"root": "",
 			"sourceRoot": "src",
 			"projectType": "application",
@@ -102,7 +102,7 @@
 				}
 			}
 		},
-		"ngx-intl-tel-input-app-e2e": {
+		"@deliverysolutions/ngx-intl-tel-input-app-e2e": {
 			"root": "e2e/",
 			"projectType": "application",
 			"prefix": "",
@@ -128,7 +128,7 @@
 				}
 			}
 		},
-		"ngx-intl-tel-input": {
+		"@deliverysolutions/ngx-intl-tel-input": {
 			"root": "projects/ngx-intl-tel-input",
 			"sourceRoot": "projects/ngx-intl-tel-input/src",
 			"projectType": "library",
@@ -161,6 +161,5 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "ngx-intl-tel-input-app"
+	}
 }
