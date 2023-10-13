@@ -14,8 +14,8 @@
     "copy-license": "cp ./LICENSE ./dist/ngx-intl-tel-input",
     "copy-readme": "cp ./README.md ./dist/ngx-intl-tel-input",
     "copy-files": "npm run copy-license && npm run copy-readme",
-    "npm_pack": "npm run copy-files && cd dist/ngx-intl-tel-input && npm pack",
-    "package": "npm run build_lib && npm run npm_pack"
+    "npm_publish": "npm run copy-files && cd dist/ngx-intl-tel-input && npm publish --access public",
+    "package": "npm run build_lib && npm run npm_publish"
   },
   "private": true,
   "dependencies": {
