@@ -1,8 +1,10 @@
+# Please Read
+
+This package has been forked for Delivery Solution's internal usage. Please feel free to use the package if it serves your needs, but be aware that reported issues may not be addressed in a timely manner.
+
+Huge, huge thanks to the original authors and contributors for their work on this package. Please see the [contributors](#contributors) section below.
+
 # International Telephone Input for Angular (NgxIntlTelInput)
-
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
-
-[![Build Status](https://travis-ci.org/webcat12345/ngx-intl-tel-input.svg?branch=master)](https://travis-ci.org/webcat12345/ngx-intl-tel-input) [![npm version](https://badge.fury.io/js/ngx-intl-tel-input.svg)](https://badge.fury.io/js/ngx-intl-tel-input) [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://www.npmjs.com/package/ngx-intl-tel-input)
 
 An Angular package for entering and validating international telephone numbers. It adds a flag dropdown to any input, detects the user's country, displays a relevant placeholder and provides formatting/validation methods.
 
@@ -12,18 +14,17 @@ An Angular package for entering and validating international telephone numbers. 
 
 Validation with [google-libphonenumber](https://github.com/ruimarinho/google-libphonenumber)
 
-| ngx-intl-tel-input | Angular        | ngx-bootstrap |
+| @deliverysolutions/ngx-intl-tel-input | Angular        | ngx-bootstrap |
 | ------------------ |----------------| ------------- |
-| 3.x.x              | 9.x.x - 14.x.x | >= 6.0.0      |
-| 2.x.x              | 8.x.x - 9.1.x  | 5.6.x         |
+| 1.x.x              | 15.x.x | >= 10.0.0      |
 
 ## Installation
 
 ### Install Dependencies
 
-`$ npm install intl-tel-input@17.0.3 --save`
+`$ npm install @deliverysolutions/intl-tel-input@1.0.0`
 
-`$ npm install google-libphonenumber --save`
+`$ npm install google-libphonenumber`
 
 `$ ng add ngx-bootstrap`
 
@@ -37,14 +38,14 @@ the bootstrap package. This should keep this dependency a lean feature-add
 
 Add _'intl-tel-input'_ style file:
 
-`./node_modules/intl-tel-input/build/css/intlTelInput.css`
+`./node_modules/@deliverysolutions/intl-tel-input/build/css/intlTelInput.css`
 
 to **angular.json** styles array:
 
 ```json
 
 "styles": [
-  "./node_modules/intl-tel-input/build/css/intlTelInput.css",
+  "./node_modules/@deliverysolutions/intl-tel-input/build/css/intlTelInput.css",
   "src/styles.css"
 ],
 
@@ -52,7 +53,7 @@ to **angular.json** styles array:
 
 ### Install This Library
 
-`$ npm install ngx-intl-tel-input --save`
+`$ npm install @deliverysolutions/ngx-intl-tel-input`
 
 ## Usage
 
@@ -67,18 +68,6 @@ imports: [NgxIntlTelInputModule];
 ## Example
 
 Refer to main app in this repository for working example.
-
-Or this:
-
-[Stackblitz Demo (Angular 8)](https://stackblitz.com/edit/ngx-intl-tel-input-demo-ng-8)
-
-[Stackblitz Demo (Angular 9)](https://stackblitz.com/edit/ngx-intl-tel-input-demo-ng-9)
-
-[Stackblitz Demo (Angular 10)](https://stackblitz.com/edit/ngx-intl-tel-input-demo-ng-10)
-
-[Stackblitz Demo (Angular 11)](https://stackblitz.com/edit/ngx-intl-tel-input-demo-ng-11)
-
-[Stackblitz Demo (Angular 12)](https://stackblitz.com/edit/ngx-intl-tel-input-demo-ng-12)
 
 ```html
 <form #f="ngForm" [formGroup]="phoneForm">
